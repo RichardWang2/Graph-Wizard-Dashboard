@@ -19,14 +19,18 @@ st.caption('Upload an excel file and generate a graph!')
 with st.sidebar:
     # Header
     st.header('Graph Editor')
-    st.write('Currently only supporting .xlsx files')
+    # st.write('Currently only supporting .xlsx files')
+
     # File uploader
     xy_options = ['File not uploaded']
     plots_options = ['Scatter Plot', 'Line Chart', 'Histogram', 'Bar Chart']
     file = st.file_uploader(label='label', label_visibility='collapsed')
     if file is not None:
-        df_xl = pd.read_excel(file)
-        xy_options = df_xl.columns
+        filename = file.name
+        if filename[-4:] == '.csv':
+            df_xl = pd.read_csv(file)
+        else:
+            df_xl = pd.read_excel(file)
     # X axis
     x_axis = st.selectbox(
         'Please select the variable for the x-axis',
