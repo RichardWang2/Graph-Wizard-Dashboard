@@ -29,8 +29,10 @@ with st.sidebar:
         filename = file.name
         if filename[-4:] == '.csv':
             df_xl = pd.read_csv(file)
+            xy_options = df_xl.columns
         else:
             df_xl = pd.read_excel(file)
+            xy_options = df_xl.columns
     # X axis
     x_axis = st.selectbox(
         'Please select the variable for the x-axis',
