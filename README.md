@@ -7,3 +7,5 @@ So during summer of 2023, I start building a web application that takes a user i
 After knowing what I want to build, I started browsing through streamlit documentations and discovered a bunch of cool looking UI designs. I definitely wasted too much time playing around with fancy animations… The app is still in development, as I soon started school and got busy :( The app can do some basic plotting, like line plots, scatter plots, histograms, barcharts, etc. I am currently working on automatic suggestions on which kind of plot the user should use.
 <br><br>
 Thank you for checking out Graph Wizard, and I hope you enjoy playing around with it!
+
+Here's the [live link demo](https://graphwizdashboard.streamlit.app/):
