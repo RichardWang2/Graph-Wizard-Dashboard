@@ -19,7 +19,7 @@ st.caption('Upload an excel file and generate a graph!')
 with st.sidebar:
     # Header
     st.header('Graph Editor')
-    # st.write('Currently only supporting .xlsx files')
+    st.write('.csv, .xls, .xlsx')
 
     # File uploader
     xy_options = ['File not uploaded']
